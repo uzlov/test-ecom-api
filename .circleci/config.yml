@@ -20,6 +20,9 @@ jobs:
               docker-compose==1.12.0 \
               awscli \
               awsebcli --upgrade --user
+      - run:
+          name: Test EB
+          command: |
             eb deploy -l Test
 
 workflows:
