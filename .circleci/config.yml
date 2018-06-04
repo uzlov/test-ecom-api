@@ -18,9 +18,8 @@ jobs:
               py-pip
             pip install \
               docker-compose==1.12.0 \
-              awscli \
-              awsebcli --upgrade
-            pip install --upgrade pip
+              awscli==1.11.76 \
+            python -v
       - deploy:
           name: Push application Docker image
           command: |
