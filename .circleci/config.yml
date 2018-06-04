@@ -54,6 +54,7 @@ jobs:
               ${login}
               docker tag app "${ECR_ENDPOINT}/api-test:${CIRCLE_SHA1}"
               docker push "${ECR_ENDPOINT}/api-test:${CIRCLE_SHA1}"
+              eb deploy -l Test
             fi
 
 workflows:

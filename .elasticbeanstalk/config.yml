@@ -1,0 +1,19 @@
+branch-defaults:
+  master:
+    environment: Ecommercecx-env
+environment-defaults:
+  Ecommercecx-env:
+    branch: null
+    repository: null
+global:
+  application_name: ecommercecx
+  default_ec2_keyname: null
+  default_platform: Docker running on 64bit Amazon Linux
+  default_region: eu-west-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  sc: git
+  workspace_type: Application
